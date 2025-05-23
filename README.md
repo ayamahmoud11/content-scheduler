@@ -33,3 +33,22 @@ A full-stack Laravel + React web application for scheduling and managing social 
 ```bash
 git clone https://github.com/ayamahmoud11/content-scheduler.git
 cd content-scheduler
+```
+و```
+### 2. Backend Setup (Laravel)
+```bash
+cd backend
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+### 3. Frontend Setup (React)
+```bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+```
