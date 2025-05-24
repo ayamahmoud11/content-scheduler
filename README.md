@@ -25,19 +25,17 @@ A full-stack Laravel + React web application for scheduling and managing social 
 ---
 ### API Routes
 ```bash
-POST /api/register
-
-POST /api/login
-
-GET /api/posts
-
-POST /api/posts
-
-GET /api/analytics
-
-GET /api/platforms
-
-GET /api/logs
+ GET|HEAD  api/analytics
+  POST      api/login 
+  POST      api/logout
+  GET|HEAD  api/logs
+  GET|HEAD  api/platforms 
+  GET|HEAD  api/posts 
+  POST      api/posts 
+  GET|HEAD  api/posts/{id} 
+  PUT       api/posts/{id} 
+  DELETE    api/posts/{id} 
+  POST      api/register
 ```
 ## 🚀 Getting Started
 
