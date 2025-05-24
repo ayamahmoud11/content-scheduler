@@ -4,15 +4,13 @@ A full-stack Laravel + React web application for scheduling and managing social 
 
 ---
 
-## 🌟 Features
-
-- ✅ User registration & login  
-- 📝 Create, edit, and schedule posts  
-- 📊 Dashboard to view upcoming posts  
-- ⚙️ Toggle platforms (Facebook, Twitter, Instagram)  
-- 🔐 JWT-based API authentication  
-- 🎨 Facebook-style UI with blue navbar  
-- 📦 Laravel backend & React frontend  
+## Features:
+- Register/Login/Logout
+- Create, schedule, and manage posts
+- Attach posts to multiple platforms
+- Auto-publish via Job
+- Post analytics + logs
+- Sanctum-based API authentication
 
 ---
 
@@ -25,7 +23,22 @@ A full-stack Laravel + React web application for scheduling and managing social 
 | Other     | JWT, Vite, Laravel Queues, Caching       |
 
 ---
+### API Routes
+```bash
+POST /api/register
 
+POST /api/login
+
+GET /api/posts
+
+POST /api/posts
+
+GET /api/analytics
+
+GET /api/platforms
+
+GET /api/logs
+```
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
@@ -41,7 +54,7 @@ cd backend
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate
+php artisan migrate --seed
 php artisan serve
 ```
 ### 3. Frontend Setup (React)
